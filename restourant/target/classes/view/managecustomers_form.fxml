@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="root" prefHeight="640.0" prefWidth="828.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.restaurant.controller.ManagecustomersFormController">
+   <children>
+      <ImageView fitHeight="810.0" fitWidth="1419.0" layoutY="-170.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../src/main/resources/img/8.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="402.0" layoutY="14.0" prefHeight="34.0" prefWidth="285.0" style="-fx-background-color: lightblue; -fx-background-radius: 10;" text="Customer management">
+         <font>
+            <Font name="Algerian" size="24.0" />
+         </font>
+      </Label>
+      <Label fx:id="lbldateandtime" layoutX="717.0" layoutY="14.0" prefHeight="34.0" prefWidth="255.0" style="-fx-background-color: lightblue; -fx-background-radius: 10;">
+         <font>
+            <Font name="Algerian" size="25.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtId" layoutX="286.0" layoutY="525.0" prefHeight="31.0" prefWidth="200.0" promptText="Id">
+         <font>
+            <Font name="Algerian" size="17.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="txtAmountSalary" layoutX="286.0" layoutY="580.0" prefHeight="31.0" prefWidth="200.0" promptText="AmountSalary">
+         <font>
+            <Font name="Algerian" size="17.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="txtPrice" layoutX="507.0" layoutY="580.0" prefHeight="31.0" prefWidth="200.0" promptText="price">
+         <font>
+            <Font name="Algerian" size="17.0" />
+         </font>
+      </TextField>
+      <Button fx:id="btnSave" layoutX="979.0" layoutY="507.0" mnemonicParsing="false" onAction="#saveOnAction" prefHeight="34.0" prefWidth="90.0" style="-fx-background-color: lightblue;" text="Save">
+         <font>
+            <Font name="Algerian" size="17.0" />
+         </font>
+      </Button>
+      <Button layoutX="1089.0" layoutY="507.0" mnemonicParsing="false" onAction="#searchOnAction" prefHeight="34.0" prefWidth="90.0" style="-fx-background-color: lightblue;" text="Search">
+         <font>
+            <Font name="Algerian" size="17.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnUpdate" layoutX="979.0" layoutY="564.0" mnemonicParsing="false" onAction="#updateOnAction" prefHeight="34.0" prefWidth="90.0" style="-fx-background-color: lightblue;" text="Update">
+         <font>
+            <Font name="Algerian" size="17.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnDelete" layoutX="1089.0" layoutY="564.0" mnemonicParsing="false" onAction="#deleteOnAction" prefHeight="34.0" prefWidth="90.0" style="-fx-background-color: lightblue;" text="Delete">
+         <font>
+            <Font name="Algerian" size="17.0" />
+         </font>
+      </Button>
+      <TextField fx:id="txtName" layoutX="507.0" layoutY="525.0" prefHeight="31.0" prefWidth="200.0" promptText="Name">
+         <font>
+            <Font name="Algerian" size="17.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="txtNumberTable" layoutX="738.0" layoutY="525.0" prefHeight="31.0" prefWidth="200.0" promptText="NumberTable">
+         <font>
+            <Font name="Algerian" size="17.0" />
+         </font>
+      </TextField>
+      <TableView fx:id="tblCustomer" layoutX="210.0" layoutY="56.0" prefHeight="443.0" prefWidth="878.0" style="-fx-background-color: lightgrey;">
+         <columns>
+            <TableColumn fx:id="colId" prefWidth="146.0" text="Id" />
+            <TableColumn fx:id="colName" prefWidth="218.39999389648438" text="Name" />
+            <TableColumn fx:id="colAmountSalary" prefWidth="185.5999755859375" text="AmountSalary" />
+            <TableColumn fx:id="colPrice" prefWidth="120.800048828125" text="Price" />
+            <TableColumn fx:id="colNumberTable" prefWidth="208.80010986328125" text="NumberTable" />
+         </columns>
+      </TableView>
+      <Button layoutX="106.0" layoutY="547.0" mnemonicParsing="false" onAction="#backOnAction" prefHeight="34.0" prefWidth="78.0" style="-fx-background-color: grey;" text="Back">
+         <font>
+            <Font name="Bernard MT Condensed" size="17.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
